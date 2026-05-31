@@ -51,7 +51,7 @@ const DropdownLinks = [
 
 
 
-const Navbar = () => {
+const Navbar = ({ handleOrderPopup = () => {} }) => {
     const [isQuickLinksOpen, setIsQuickLinksOpen] = useState(false);
 
     return (
@@ -119,7 +119,7 @@ const Navbar = () => {
                             <IoIosSearch className='text-xl group-hover:text-primary dark:text-gray-400 text-gray-600 absolute right-3 top-1/2 -translate-y-1/2 duration-200' />
                         </div>
                         {/* Order button  */}
-                        <button className='relative rounded-full border border-black/5 bg-white p-3 shadow-sm shadow-black/5 transition-transform duration-200 hover:-translate-y-0.5 hover:shadow-md dark:border-white/10 dark:bg-gray-900 sm:p-3.5'>
+                        <button onClick={handleOrderPopup} className='relative rounded-full border border-black/5 bg-white p-3 shadow-sm shadow-black/5 transition-transform duration-200 hover:-translate-y-0.5 hover:shadow-md dark:border-white/10 dark:bg-gray-900 sm:p-3.5'>
                             <FaShoppingCart className='text-xl text-gray-600 dark:text-gray-300' />
                             <div className='w-4 h-4 bg-primary text-white rounded-full absolute top-0 right-0 flex items-center justify-center text-[10px] font-semibold shadow-sm' >
                                 4
