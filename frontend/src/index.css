@@ -4,7 +4,7 @@
 
 @layer components {
   .search-bar {
-    @apply w-0 group-hover:w-[300px] transition-all duration-300 rounded-full group-hover:border group-hover:border-gray-500 px-3 py-1 focus:outline-none dark:border-gray-800 dark:bg-gray-900 group-hover:dark:bg-gray-800;
+    @apply w-0 group-hover:w-[280px] xl:group-hover:w-[320px] transition-all duration-300 rounded-full border border-transparent bg-white/80 px-4 py-2 pr-10 text-sm shadow-sm shadow-black/5 placeholder:text-gray-400 focus:outline-none focus:border-primary/30 focus:ring-2 focus:ring-primary/10 dark:border-white/10 dark:bg-gray-900/80 dark:group-hover:bg-gray-800;
   }
 }
 
