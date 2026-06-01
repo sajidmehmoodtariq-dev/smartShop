@@ -24,17 +24,19 @@ const App = () => {
 
   return (
     <BrowserRouter>
-      <Routes>
-        <Route
-          path="/"
-          element={<MainPage orderPopup={orderPopup} handleOrderPopup={handleOrderPopup} />}
-        />
-        <Route
-          path="/shop"
-          element={<ShopPage handleOrderPopup={handleOrderPopup} />}
-        />
-        <Route path="*" element={<Navigate to="/" replace />} />
-      </Routes>
+      <div className="min-h-screen bg-white text-gray-900 duration-200 dark:bg-gray-900 dark:text-white">
+        <Routes>
+          <Route
+            path="/"
+            element={<MainPage orderPopup={orderPopup} handleOrderPopup={handleOrderPopup} />}
+          />
+          <Route
+            path="/shop"
+            element={<ShopPage handleOrderPopup={handleOrderPopup} />}
+          />
+          <Route path="*" element={<Navigate to="/" replace />} />
+        </Routes>
+      </div>
     </BrowserRouter>
   );
 };
